@@ -1,0 +1,121 @@
+#navbar {
+  width: 100%;
+  margin: 0 auto;
+  height: 225px;
+  background-color: rgba(77, 136, 255, 0.9);
+  box-shadow: 5px 5px 5px grey;
+  text-decoration: none;
+  overflow: hidden; }
+
+.left-side ul li {
+  border: 2px solid;
+  text-decoration: none;
+  display: block;
+  float: left; }
+
+.left-side ul li a {
+  float: left;
+  border: 2px solid;
+  margin: 22px; }
+
+.right-side ul li {
+  border: 2px solid;
+  text-decoration: none;
+  display: block;
+  float: right; }
+
+.right-side ul li a {
+  border: 2px solid;
+  float: right;
+  margin: 22px; }
+
+.title {
+  width: 30%;
+  display: block;
+  font-size: 5em;
+  margin: 20px auto;
+  color: white;
+  text-align: center; }
+
+#body {
+  background-color: #D1CFC9;
+  margin: 0;
+  padding: 0; }
+
+#home-header {
+  margin: 90px auto;
+  border: 2px solid;
+  width: 50%;
+  font-size: 4.5em;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif; }
+
+#title-box {
+  width: 65%;
+  margin: 0px auto;
+  border: 2px solid;
+  text-decoration: none; }
+
+#post-title {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid;
+  font-size: 4em;
+  text-align: center;
+  text-decoration: none; }
+
+#content-box {
+  width: 65%;
+  margin: 10px auto;
+  border: 2px solid; }
+
+#post-content {
+  width: 95%;
+  margin: 10px auto;
+  border: 1px solid;
+  font-size: 1.5em; }
+
+#post-container {
+  border: 1px solid;
+  margin: 70px auto;
+  width: 75%;
+  background-color: white;
+  border-radius: 10px; }
+
+#line-break {
+  width: 50%;
+  margin: 30px auto; }
+
+#loggedin {
+  text-align: right;
+  margin: 10px; }
+
+#loggedin-dot {
+  border-radius: 50%;
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  display: inline-block; }
+
+#body {
+  background-color: #D1CFC9;
+  margin: 0;
+  padding: 0; }
+
+#user-head {
+  margin: 90px auto;
+  border: 2px solid;
+  width: 50%;
+  font-size: 4.5em;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif; }
+
+#user-new-post {
+  margin: 0 auto;
+  border: 2px solid;
+  width: 20%;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif; }
+
+/*# sourceMappingURL=main.css.map */

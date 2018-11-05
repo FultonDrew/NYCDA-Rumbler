@@ -1,0 +1,47 @@
+#navbar {
+	width: 100%;
+	margin: 0 auto;
+	height: 225px;
+	// border: 2px solid;
+	background-color: rgba(77,136,255,0.9);
+	box-shadow: 5px 5px 5px grey;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.left-side ul li{
+	border: 2px solid;
+	text-decoration: none;
+	display: block;
+	float: left;
+	// margin: 20px auto;
+}
+
+.left-side ul li a{
+	float: left;
+	border: 2px solid;
+	margin: 22px;
+}
+
+.right-side ul li{
+	border: 2px solid;
+	text-decoration: none;
+	display: block;
+	float: right;
+}
+
+.right-side ul li a{
+	border: 2px solid;
+	float: right;
+	margin: 22px;
+}
+
+.title {
+	// border: 2px solid;
+	width: 30%;
+	display: block;
+	font-size: 5em;
+	margin: 20px auto;
+	color: white;
+	text-align: center;
+}

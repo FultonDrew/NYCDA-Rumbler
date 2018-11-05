@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DrewBLOG</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:600" rel="stylesheet">
+</head>
+<body id='body'>
+
+	<nav class='navbar' id='navbar'>
+		<div class='title'>drewBLOG</div>
+		<div class='left-side'>
+		<ul>
+			<li><a href='/'>Home</a></li>
+			<% if session[:user_id] %>
+
+				<li><a href='/newpost'>New Blog</a></li>
+			<% end %>
+			
+		</ul>
+		</div>
+		<div class='right-side'>
+		<ul>
+			<li><a href='/loginpage'><form method='post' action='/loginpage'>
+				Log in
+			</form></a></li>
+			<li><a href='/'><form method='post' action='/logout'>
+				<input type='submit' value="Logout">
+			</form></a></li>
+			
+		</ul>
+		</div>
+	</nav>
+
+<div id='loggedin'>
+<% if session[:user_id] %>
+<div id='loggedin-dot'></div>
+Logged in as: <a href='/users/<%= current_user.id %>'><%= current_user.fname %> <%= current_user.lname %></a>
+<% end %>
+</div>
+
+
+<div class='main-container'>
+	<%= yield %>
+</div>
+
+
+</body>
+</html>

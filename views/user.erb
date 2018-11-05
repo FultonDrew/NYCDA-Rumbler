@@ -1,0 +1,27 @@
+
+<h2 id='user-head'><%= @user.fname %> <%= @user.lname %>'s Profile</h2>
+
+<div id='user-new-post'><a href='/newpost'>Create a new post</a></div>
+
+<% @blogs.each_with_index do |b, index| %>
+<% if b.user_id ===   @user.id %>
+<div id='post-container'>
+	<div id='title-box'>
+		<div id='post-title'><%= b.title%></a>
+		</div>
+	</div>
+<hr id='line-break'>
+	<div id='content-box'>
+		<div id='post-content'><%= b.content %>
+		</div>
+	</div>
+</div>
+
+
+
+
+<% end %>
+<% end %>
+
+
+
