@@ -1,9 +1,31 @@
-<h3>Update a Blog:</h3>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+</head>
+<body>
 
-<form method='post' action='/update/<%= @blog.id %>'>
-	<p>Title</p>
-	<input type='text' name='title' value='<%= @blog.title %>'>
-	<p>Content</p>
-	<textarea type='text' name='content' ><%= @blog.content %></textarea>
-	<input type='submit'>
-</form>
+
+
+
+<div id='edit-box'>
+	
+		<h6 id='edit-head'>Edit Post</h6>
+			<form method='post' action='/update/<%= @blog.id %>'>
+				
+				<div id='edit-field-box'>
+					<div id='edit-title'>Title:</div>
+					<input type="text" name="title" value='<%= @blog.title %>' id='edit-title-box'>
+					<div id='edit-content'>Post:</div>
+					<textarea type='text' name='content' id='edit-content-box'><%= @blog.content %></textarea>
+				
+					<input type="submit" value="Update" id='edit-submit'>
+				</div>
+			</form>
+	
+</div>
+
+
+</body>
+</html>

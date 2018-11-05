@@ -6,7 +6,7 @@
 
 #user-head {
 	margin: 90px auto;
-	border: 2px solid;
+	// border: 2px solid;
 	width: 50%;
 	font-size: 4.5em;
 	text-align: center;
@@ -15,8 +15,9 @@
 
 #user-new-post {
 	margin: 0 auto;
-	border: 2px solid;
-	width: 20%;
+	text-decoration: none;
+	// border: 2px solid;
+	width: 40%;
 	font-size: 2em;
 	text-align: center;
 	font-family: 'Fira Sans', sans-serif;

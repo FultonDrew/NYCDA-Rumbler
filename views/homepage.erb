@@ -1,14 +1,15 @@
-<body id='body'>
+
 
 
 <h2 id="home-header">All posts</h2>
 
 
 
-<% @blogs.each_with_index do |b, index| %>
+<% @blogs.all.reverse[0..20].each do |b| %>
 <div id='post-container'>
 <div id='title-box'>
 <div id='post-title'><a href="/blogs/<%=b.id %>"><%= b.title%></a></div></div>
+
 <hr id='line-break'>
 <div id='content-box'>
 <div id='post-content'><%= b.content %></div></div>
@@ -18,5 +19,4 @@
 <% end %>
 
 
-</body>
 

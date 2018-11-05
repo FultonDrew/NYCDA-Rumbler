@@ -44,7 +44,9 @@ get '/users/:id' do
 end
 
 get "/blogs/:id" do
+	@blogs = Blog.all
 	@blog = Blog.find(params[:id])
+
 	erb :specificblog
 end
 

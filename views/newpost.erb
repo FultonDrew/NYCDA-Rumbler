@@ -1,11 +1,23 @@
-<h3>Create a new Blog:</h3>
+<h3 id='new-header'>Create a new post</h3>
 
-
+<div id='post-container'>
 
 <form method='post' action='/create_blog'>
-	<p>Title</p>
-	<input type='text' name='title'>
-	<p>Content</p>
-	<textarea type='text' name='content'></textarea>
-	<input type='submit'>
+	<div id='title-box'>
+		<div id='post-title'>
+		Title
+		</div>
+	<input type='text' name='title' id='post-content'>
+	<div id='post-title'>
+	Content
+	</div>
+	<div id='content-box'>
+	<textarea type='text' name='content' id='new-content-box'></textarea>
+	</div>
+	</div>
+	<input type='submit' id='edit-submit'>
 </form>
+</div>
+
+
+

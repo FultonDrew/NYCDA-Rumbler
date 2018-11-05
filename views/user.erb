@@ -3,11 +3,11 @@
 
 <div id='user-new-post'><a href='/newpost'>Create a new post</a></div>
 
-<% @blogs.each_with_index do |b, index| %>
+<% @blogs.all.reverse[0..20].each do |b| %>
 <% if b.user_id ===   @user.id %>
 <div id='post-container'>
 	<div id='title-box'>
-		<div id='post-title'><%= b.title%></a>
+		<div id='post-title'><a href="/blogs/<%= b.id %>"><%= b.title%></a>
 		</div>
 	</div>
 <hr id='line-break'>

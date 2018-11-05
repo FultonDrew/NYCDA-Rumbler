@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:600" rel="stylesheet">
 </head>
+<div class='main-container'>
+
 <body id='body'>
 
 	<nav class='navbar' id='navbar'>
@@ -40,10 +42,10 @@ Logged in as: <a href='/users/<%= current_user.id %>'><%= current_user.fname %> 
 </div>
 
 
-<div class='main-container'>
-	<%= yield %>
+	
 </div>
 
 
 </body>
+<%= yield %>
 </html>
