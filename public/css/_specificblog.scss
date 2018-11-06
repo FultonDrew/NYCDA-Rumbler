@@ -10,14 +10,25 @@
 	height: 30px;
 	font-size: 1.2em;
 	text-decoration: none;
+	color: black;
 	margin: 10px auto;
 	border: 1px solid;
 	display: block;
+	text-align: center;
+	line-height: 30px;
 	background-color: #EAE2DE;
+}
+
+#update-button a {
+	text-decoration: none;
+	text-align: center;
+	border: 2px solid;
+	font-size: 1.2em;
 }
 
 #delete-button {
 	width: 40%;
+	text-align: center;
 	height: 30px;
 	font-size: 1.2em;
 	margin: 10px auto;

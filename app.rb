@@ -11,7 +11,6 @@ def current_blog
 	@blog = Blog.find(params[:id])
 end
 
-
 def current_user
 	@users = User.all
 	@blogs = Blog.all
@@ -124,7 +123,7 @@ post "/destroy/:id" do
 	end
 end
 
-post '/logout' do
+get '/logout' do
 	session[:user_id] = nil
 	redirect "/"
 	

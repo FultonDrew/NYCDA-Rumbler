@@ -18,12 +18,13 @@
 
 
 <div id='update-container'>
-		<a href='/blogs/<%=@blog.id %>/edit'><input type='submit' value='Update this post' id='update-button'></a>
+	<div><a href='/blogs/<%=@blog.id %>/edit' id='update-button' >Update this blog</a></div>
+		
 
 	<form method='post' action='/destroy/<%= @blog.id %>'>
 		<input type='submit' value='Delete this post' id='delete-button'>
 	</form>
-	</div>
+</div>
 
 
 

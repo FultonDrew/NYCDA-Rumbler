@@ -11,8 +11,38 @@
 	font-size: 1.5em;
 	width: 95%;
 	height: 300px;
-	
+	box-shadow: 2px 2px 2px grey;
+	border: 1px solid;
+	// text-align: center;
+	display: block;
+}
+
+#new-post-title {
+	width: 50%;
+	margin: 10px auto;
+	// border: 1px solid;
+	font-size: 2.2em;
+	text-align: center;
+	text-decoration: none;
+}
+
+#new-title {
+	margin: 5px auto;
+	font-size: 1.5em;
+	width: 55%;
+	box-shadow: 2px 2px 2px grey;
+	border: 1px solid;
+	text-align: center;
+	display: block;
+}
+
+#new-submit {
+	margin: 20px auto;
+	width: 20%;
+	height: 30px;
+	background-color: #F6F3F1;
 	// border: 2px solid;
 	text-align: center;
 	display: block;
+	background-color: rgba(77,136,255,0.9);
 }

@@ -26,8 +26,9 @@
 			<li><a href='/loginpage'><form method='post' action='/loginpage'>
 				Log in
 			</form></a></li>
-			<li><a href='/'><form method='post' action='/logout'>
-				<input type='submit' value="Logout">
+
+			<li><a href='/logout'><form method='post' action='/logout'>
+				Log out 
 			</form></a></li>
 			
 		</ul>
@@ -38,6 +39,7 @@
 <% if session[:user_id] %>
 <div id='loggedin-dot'></div>
 Logged in as: <a href='/users/<%= current_user.id %>'><%= current_user.fname %> <%= current_user.lname %></a>
+
 <% end %>
 </div>
 

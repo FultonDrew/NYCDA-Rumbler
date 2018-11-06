@@ -4,23 +4,29 @@
   padding: 0; }
 
 #home-header {
-  margin: 90px auto;
+  margin: 10px auto;
   width: 50%;
   font-size: 4.5em;
   text-align: center;
   font-family: 'Fira Sans', sans-serif; }
 
 #title-box {
-  width: 85%;
+  width: 100%;
   margin: 0px auto;
   text-decoration: none; }
 
 #post-title {
-  width: 50%;
+  width: 70%;
   margin: 10px auto;
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
   text-decoration: none; }
+
+#post-title a {
+  text-decoration: none; }
+
+#post-author {
+  margin: 0 auto; }
 
 #content-box {
   width: 65%;
@@ -42,6 +48,7 @@
   border: 1px solid;
   margin: 70px auto;
   width: 55%;
+  box-shadow: 3px 3px 3px rgba(77, 136, 255, 0.9);
   background-color: #F6F3F1;
   border-radius: 10px; }
 
@@ -70,6 +77,8 @@
   overflow: hidden; }
 
 .left-side ul li {
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px;
   margin: 10px;
   text-decoration: none;
   display: block;
@@ -83,6 +92,8 @@
   background-color: #EAE2DE; }
 
 .right-side ul li {
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px;
   margin: 10px;
   text-decoration: none;
   display: block;
@@ -102,6 +113,10 @@
   margin: 20px auto;
   color: white;
   text-align: center; }
+
+#logout-button {
+  background-color: #EAE2DE;
+  font-size: 0.6em; }
 
 #body {
   background-color: #D1CFC9;
@@ -181,7 +196,7 @@
   width: 20%;
   height: 30px;
   background-color: #F6F3F1;
-  border: 2px solid;
+  border: 1px solid;
   text-align: center;
   display: block; }
 
@@ -244,7 +259,6 @@
   width: 20%;
   height: 30px;
   background-color: #F6F3F1;
-  border: 2px solid;
   text-align: center;
   display: block;
   background-color: rgba(77, 136, 255, 0.9); }
@@ -259,13 +273,23 @@
   height: 30px;
   font-size: 1.2em;
   text-decoration: none;
+  color: black;
   margin: 10px auto;
   border: 1px solid;
   display: block;
+  text-align: center;
+  line-height: 30px;
   background-color: #EAE2DE; }
+
+#update-button a {
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid;
+  font-size: 1.2em; }
 
 #delete-button {
   width: 40%;
+  text-align: center;
   height: 30px;
   font-size: 1.2em;
   margin: 10px auto;
@@ -284,7 +308,33 @@
   font-size: 1.5em;
   width: 95%;
   height: 300px;
+  box-shadow: 2px 2px 2px grey;
+  border: 1px solid;
+  display: block; }
+
+#new-post-title {
+  width: 50%;
+  margin: 10px auto;
+  font-size: 2.2em;
+  text-align: center;
+  text-decoration: none; }
+
+#new-title {
+  margin: 5px auto;
+  font-size: 1.5em;
+  width: 55%;
+  box-shadow: 2px 2px 2px grey;
+  border: 1px solid;
   text-align: center;
   display: block; }
+
+#new-submit {
+  margin: 20px auto;
+  width: 20%;
+  height: 30px;
+  background-color: #F6F3F1;
+  text-align: center;
+  display: block;
+  background-color: rgba(77, 136, 255, 0.9); }
 
 /*# sourceMappingURL=main.css.map */

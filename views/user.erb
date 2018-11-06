@@ -1,7 +1,14 @@
 
 <h2 id='user-head'><%= @user.fname %> <%= @user.lname %>'s Profile</h2>
 
+
+
+<% if session[:user_id] %>
 <div id='user-new-post'><a href='/newpost'>Create a new post</a></div>
+
+<% end %>
+
+
 
 <% @blogs.all.reverse[0..20].each do |b| %>
 <% if b.user_id ===   @user.id %>
